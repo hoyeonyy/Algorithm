@@ -48,15 +48,17 @@ public class Main {
             }
         }
 
+        StringBuilder sb = new StringBuilder();
         if(flag == true){
             System.out.println("1");
             for (int i = 0; i < r; i++) {
                 for (int j = 0; j < c; j++) {
-                    System.out.print(map[i][j]);
+                    sb.append(map[i][j]);
                 }
-                System.out.println();
+                sb.append('\n');
             }
         }
+        System.out.println(sb);
 
     }
 //    static void DFS(int a, int cnt){
