@@ -20,8 +20,9 @@ class Main {
                     stack.push(i);
                     break;
                 }
-                Integer pop = stack.pop();
-                int sum = ar[pop] * (i - stack.peek() - 1);
+                Integer peek = stack.peek();
+                stack.pop();
+                int sum = ar[peek] * (i - stack.peek() - 1);
                 if(sum > answer){
                     answer = sum;
                 }
